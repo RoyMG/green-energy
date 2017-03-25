@@ -1,0 +1,15 @@
+@mixin medium {
+  @media all and (min-width: 35rem){
+
+    //@content is like a placeholder for ccs rules to be used later on in the code - adjustments for tablet view-port
+    @content;
+  }
+ }
+
+@mixin large {
+  @media all and (min-width: 60rem){
+
+    //@content is like a placeholder for ccs rules to be used later on in the code - adjustments for tablet view-port
+    @content;
+  }
+ }

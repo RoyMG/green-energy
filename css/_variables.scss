@@ -1,0 +1,13 @@
+$title-font-size-reduce: 0.75;
+$h1: 32px;
+$h2: $h1 * $title-font-size-reduce;
+
+$base-text-color: #2c2c2c;
+$silder-text-color: #fff;
+
+$base-color: #61ABFF;
+$light-color: lighten($base-color, 25%);
+$des-color: desaturate($base-color, 20%);
+$dark-color: darken($des-color, 20%);
+
+$thick-font: 600;

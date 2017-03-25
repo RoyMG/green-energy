@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Kreon|Open+Sans");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6rem;
+  color: #2c2c2c;
+  background-color: #e1efff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kreon', serif;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+header img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+nav li {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px 0;
+  background-color: #71acef;
+  font-weight: 600;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.slider {
+  background-image: url(../img/blue-background-2109478_1920.jpg);
+  margin-top: 20px;
+}
+
+.slider .masthead {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.slider .masthead figure {
+  animation-name: fading;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+}
+
+.slider .masthead figure img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .masthead figcaption {
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-content .container .buttons button {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.main-content .container .buttons button:last-child {
+  margin-right: 0;
+}
+
+.main-content .container .figure img {
+  width: 100%;
+  height: auto;
+}
+
+.main-content .container .figure figcaption {
+  text-align: left;
+  margin: 10px 0;
+}
+
+#B1 {
+  background: url("../img/sun.png") 0 0;
+}
+
+#B1:hover {
+  background-position: -50px 0;
+}
+
+#B2 {
+  background: url("../img/led-light.png") 0 0;
+}
+
+#B2:hover {
+  background-position: -50px 0;
+}
+
+#B3 {
+  background: url("../img/wind-mill.png") 0 0;
+}
+
+#B3:hover {
+  background-position: -50px 0;
+}
+
+.active {
+  background-position: -50px 0 !important;
+}
+
+/*Footer Fix*/
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-fix {
+  flex: 1;
+}
+
+/*End of Footer Fix*/
+footer {
+  padding: 35px 0;
+  background-color: #1977e1;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+footer p a img {
+  max-width: 40px;
+  height: auto;
+}
+
+@media all and (min-width: 35rem) {
+  body {
+    font-size: 1rem;
+  }
+  header {
+    text-align: center;
+  }
+  header img {
+    width: 50%;
+    height: auto;
+  }
+  nav li {
+    display: inline-block;
+    width: calc(33.33% - 7px);
+    margin: 5px 5px 5px 0;
+    padding: 5px 0;
+  }
+  nav li:last-child {
+    margin: 5px 0;
+  }
+  .slider .masthead figure img {
+    width: 50%;
+    height: auto;
+  }
+  .main-content {
+    text-align: center;
+  }
+  .main-content .container {
+    margin-bottom: 25px;
+  }
+  .main-content .container .figure img {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: auto;
+    padding: 0 5px;
+  }
+  .main-content .container .figure figcaption {
+    width: 50%;
+    text-align: left;
+    margin: 0 0;
+    float: right;
+    padding-left: 25px;
+  }
+  .main-content .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media all and (min-width: 60rem) {
+  header img {
+    width: 30%;
+  }
+  .slider .masthead figure img {
+    width: 30%;
+    height: auto;
+    margin-left: 20%;
+    float: left;
+  }
+  .slider .masthead figcaption {
+    width: 30%;
+    margin-left: 25px;
+    margin-top: 10%;
+    float: left;
+  }
+  .slider .masthead:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main-content .container .buttons {
+    width: 10%;
+    float: left;
+    padding-right: 25px;
+  }
+  .main-content .container .buttons button {
+    display: block;
+    margin: 15px auto;
+  }
+  .main-content .container .buttons button:last-child {
+    margin: 15px auto;
+  }
+  .main-content .container .figure img {
+    width: 30%;
+  }
+  .main-content .container .figure figcaption {
+    width: 60%;
+  }
+}

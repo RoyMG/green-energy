@@ -1,0 +1,118 @@
+@import "variables";
+@include medium {
+    body {
+        font-size: 1rem;
+    }
+    header {
+        text-align: center;
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+    nav {
+        li {
+            display: inline-block;
+            width: calc(33.33% - 7px);
+            margin: 5px 5px 5px 0;
+            padding: 5px 0;
+            &:last-child {
+                margin: 5px 0;
+            }
+        }
+    }
+    .slider {
+        .masthead{
+            figure{
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .main-content {
+        text-align: center;
+        .container {
+            margin-bottom: 25px;
+            .figure {
+                img {
+                    width: 50%;
+                    height: auto;
+                    float: left;
+                    margin: auto;
+                    padding: 0 5px;
+                }
+                figcaption {
+                    width: 50%;
+                    text-align: left;
+                    margin: 0 0;
+                    float: right;
+                    padding-left: 25px;
+                }
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    }
+}
+
+@include large {
+    body {          }
+    header {
+        img {
+            width: 30%;
+        }
+    }
+    .slider {
+        .masthead{
+            figure{
+                img {
+                    width: 30%;
+                    height: auto;
+                    margin-left: 20%;
+                    float: left;
+                }
+            }
+            figcaption{
+                width: 30%;
+                margin-left: 25px;
+                margin-top: 10%;
+                float: left;
+                
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    }
+    .main-content {
+        .container {
+            .buttons {
+                width: 10%;
+                float: left;
+                padding-right: 25px;
+                button {
+                    display: block;
+                    margin: 15px auto;
+                    &:last-child {
+                        margin: 15px auto;
+                    }
+                }
+            }
+            .figure {
+                img {
+                    width: 30%;
+                }
+                figcaption {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
